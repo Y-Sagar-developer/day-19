@@ -1,0 +1,290 @@
+:root{
+  --fill:rgb(0, 0, 0);
+  --background-color:rgb(0, 0, 0);
+  --colour:rgb(255, 255, 255);
+
+}
+/* @media(prefers-color-scheme: dark){
+  :root{
+    --fill:rgb(255, 255, 255);
+    --background-color:rgb(0, 0, 0);
+    --colour:rgb(255, 255, 255);
+
+
+  
+  }
+
+} */
+body{
+  background-image:url(./insta.jpg);
+  background-repeat: no-repeat;
+background-size: cover;}
+.container {
+  width: 400px;
+  height: 650px;
+  border: 1px solid;
+  position: relative;
+  border-radius: 10px;
+  overflow-y: scroll;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(255, 255, 255);
+}
+.container:hover { 
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+ }
+ .container:hover .thread .icon{
+  color: white;
+ }
+
+*::-webkit-scrollbar {
+  width: 1px;
+}
+
+.top {
+  display: flex;
+  height: 28px;
+  justify-content: space-between;
+  margin: 5px;
+  top: 3px;
+  z-index: 2;
+}
+h3 {
+  margin: 0;
+}
+.cap {
+  position: relative;
+  height: 18px;
+  top: 3px;
+}
+.icon {
+  width: 20px;
+  height: 19px;
+  top: 1px;
+  position: relative;
+  margin-left: 30px;
+  
+}
+.post{
+  stroke: var(--fill);
+}
+.menu{
+  fill: var(--fill);
+}
+/* ---------------------------------------------------- */
+/* profile */
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -3px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.post {
+  margin-bottom: 0;
+  text-align: center;
+}
+.chitti {
+  border-radius: 50px;
+  height: 70px;
+  width: 70px;
+  border: 3px solid;
+  border-color: rgb(7, 179, 202);
+  padding: 2px;
+}
+/* -------------------------------------------------------------- */
+/* bio */
+#friends {
+  width: 91px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.friendname {
+  width: 150px;
+  color: rgb(255, 255, 255);
+  display: none;
+}
+
+#friends:hover + .friendname {
+  display: block;
+}
+.bio {
+  position: relative;
+  bottom: 16px;
+  margin: 5px;
+  padding-left: 5px;
+}
+.the {
+  position: relative;
+  top: 5px;
+}
+.thread {
+  position: relative;
+  background-color: rgb(196, 196, 181);
+  width: 140px;
+  height: 25px;
+  padding: 1px;
+  border-radius: 8px;
+  font-size: small;
+  bottom: 11px;
+}
+
+.biolist {
+  position: relative;
+  bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.recentfollow {
+  position: relative;
+  border-radius: 50px;
+  z-index: 2;
+  border: 2px solid white;
+  bottom: 5px;
+}
+.recentfollow2 {
+  position: relative;
+  right: 15px;
+  border-radius: 50px;
+  z-index: 1;
+  bottom: 5px;
+}
+.follow {
+  position: relative;
+  font-size: small;
+  bottom: 12px;
+  right: 18px;
+}
+
+/* --------------------------------------------- */
+/* <!-- edit profile and share profile --> */
+.button {
+  position: relative;
+
+  margin: 5px;
+  bottom: 13px;
+  padding-left: 5px;
+  height: 45px;
+}
+.button1 {
+  position: relative;
+  width: 162px;
+  padding: 10px;
+  bottom: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn1 {
+  position: relative;
+  top: -7px;
+  padding: 17px;
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+}
+.plus {
+  position: relative;
+  bottom: 10px;
+  /* right: 8px; */
+  width: 20px;
+  height: 20px;
+}
+.button1:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+}
+.btn1:hover {
+  background-color: rgb(255, 0, 0);
+}
+/* ------------------------------------------------ */
+/* highlets */
+.highlets {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  bottom: 24px;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.highlet {
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid rgb(211, 31, 11);
+  padding: 2px;
+  object-fit: cover;
+}
+.highlet:hover{
+  transform: scale(1.2);
+}
+/* -------------------------------------------------------- */
+/* post and reels and tag */
+.postreeltag {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  margin-top: -10px;
+  cursor: pointer;
+  fill: var(--fill);
+}
+.ptr {
+  width: 25px;
+}
+/* --------------------------------------------------- */
+/* photos */
+.photos {
+  margin: 5px;
+  padding: 5px;
+}
+.pic {
+  width: 120px;
+  height: 110px;
+  object-fit: cover;
+}
+.pic:active {
+  width: 40%;
+  height: 10%;
+  transform: scale(1);
+}
+/* ------------------------------------------------- */
+/* footer */
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: rgb(73, 70, 70);
+  bottom: -1px;
+  position: sticky;
+  border-radius: 3px;
+}
+.footericon {
+  position: relative;
+  width: 25px;
+  top: 1%;
+}
+.footerprofile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+.home{
+  fill: var(--fill);
+}
+.search{
+  fill:var(--fill);
+}
+.reels{
+  fill:var(--fill)
+}
+/* ---------------------------------- */
+/* scrollbar */
+.scrollbar {
+  position: relative;
+  overflow-y: scroll;
+}
