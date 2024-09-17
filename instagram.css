@@ -1,8 +1,6 @@
-:root{
-  --fill:rgb(0, 0, 0);
-  --background-color:rgb(0, 0, 0);
-  --colour:rgb(255, 255, 255);
-
+:root {
+  --fill: rgb(255, 255, 255);
+  --colour: #ffffff;
 }
 /* @media(prefers-color-scheme: dark){
   :root{
@@ -15,10 +13,11 @@
   }
 
 } */
-body{
-  background-image:url(./insta.jpg);
+body {
+  background-image: url(./insta.jpg);
   background-repeat: no-repeat;
-background-size: cover;}
+  background-size: cover;
+}
 .container {
   width: 400px;
   height: 650px;
@@ -28,15 +27,16 @@ background-size: cover;}
   overflow-y: scroll;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
+  color: white;
 }
-.container:hover { 
+/* .container:hover { 
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
- }
- .container:hover .thread .icon{
+ } */
+/* .container:hover .thread .icon{
   color: white;
- }
+ } */
 
 *::-webkit-scrollbar {
   width: 1px;
@@ -56,23 +56,22 @@ h3 {
 .cap {
   position: relative;
   height: 18px;
-  top: 3px;
+  top: 5px;
 }
+
 .icon {
-  width: 20px;
-  height: 19px;
+  width: 25px;
+  height: 23px;
   top: 1px;
   position: relative;
   margin-left: 30px;
-  
 }
-.post{
+.post {
   stroke: var(--fill);
 }
-.menu{
+.menu {
   fill: var(--fill);
 }
-/* ---------------------------------------------------- */
 /* profile */
 .profile {
   display: flex;
@@ -94,7 +93,7 @@ h3 {
   border-color: rgb(7, 179, 202);
   padding: 2px;
 }
-/* -------------------------------------------------------------- */
+
 /* bio */
 #friends {
   width: 91px;
@@ -104,7 +103,6 @@ h3 {
 }
 .friendname {
   width: 150px;
-  color: rgb(255, 255, 255);
   display: none;
 }
 
@@ -159,7 +157,6 @@ h3 {
   right: 18px;
 }
 
-/* --------------------------------------------- */
 /* <!-- edit profile and share profile --> */
 .button {
   position: relative;
@@ -193,13 +190,12 @@ h3 {
   height: 20px;
 }
 .button1:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(122, 119, 119);
   color: rgb(0, 0, 0);
 }
 .btn1:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(122, 119, 119);
 }
-/* ------------------------------------------------ */
 /* highlets */
 .highlets {
   position: relative;
@@ -217,10 +213,10 @@ h3 {
   padding: 2px;
   object-fit: cover;
 }
-.highlet:hover{
+.highlet:hover {
   transform: scale(1.2);
 }
-/* -------------------------------------------------------- */
+/*  */
 /* post and reels and tag */
 .postreeltag {
   position: relative;
@@ -234,7 +230,6 @@ h3 {
 .ptr {
   width: 25px;
 }
-/* --------------------------------------------------- */
 /* photos */
 .photos {
   margin: 5px;
@@ -250,14 +245,13 @@ h3 {
   height: 10%;
   transform: scale(1);
 }
-/* ------------------------------------------------- */
 /* footer */
 .footer {
   position: relative;
   display: flex;
   justify-content: space-around;
   padding: 5px;
-  background-color: rgb(73, 70, 70);
+  background-color: rgb(0, 0, 0);
   bottom: -1px;
   position: sticky;
   border-radius: 3px;
@@ -265,7 +259,7 @@ h3 {
 .footericon {
   position: relative;
   width: 25px;
-  top: 1%;
+  top: 6px;
 }
 .footerprofile {
   width: 30px;
@@ -273,16 +267,15 @@ h3 {
   border-radius: 50px;
   border: 2px solid black;
 }
-.home{
+.home {
   fill: var(--fill);
 }
-.search{
-  fill:var(--fill);
+.search {
+  fill: var(--fill);
 }
-.reels{
-  fill:var(--fill)
+.reels {
+  fill: var(--fill);
 }
-/* ---------------------------------- */
 /* scrollbar */
 .scrollbar {
   position: relative;
